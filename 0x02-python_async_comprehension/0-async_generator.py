@@ -5,9 +5,10 @@ Asynchronous generator that yields random numbers between 0 and 10.
 
 import asyncio
 import random
+import typing
 
 
-async def async_generator():
+async def async_generator() -> typing.Generator[float, None, None]:
     """
     Coroutine that loops 10 times,
     asynchronously waits for 1 second, and yields
